@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 
 use App\http\Resources\Product\ProductResource;
 
+use App\http\Resources\Product\ProductCollection;
+
 class ProductController extends Controller
 {
     /**
@@ -17,7 +19,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return Product::all();
+        return ProductCollection::collection(Product::all());
     }
 
     /**
