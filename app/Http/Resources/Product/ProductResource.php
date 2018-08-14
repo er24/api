@@ -18,7 +18,7 @@ class ProductResource extends Resource
 
             'name' => $this->name,
 
-            'description' => $this->details,
+            'details' => $this->details,
 
             'price' => $this->price,
 
