@@ -16,6 +16,8 @@ class ReviewResource extends Resource
     {
         return [
 
+            'id' => $this->id,
+
             'customer' => $this->customer,
 
             'review' => $this->review,
